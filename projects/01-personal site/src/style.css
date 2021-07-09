@@ -1,3 +1,15 @@
+:root {
+    /* https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize */
+    --main-bg-color:    #dcdfe4;
+    /* --other1:           #aca69f;
+    --other2:           #adab76;
+    --medium-text-color:#666b32;
+    --other4:          #0f211a; */
+}
+:root{
+    --other1:           #aca69f;
+}
+
 img {
     width: 200px;
     height: auto;
@@ -5,5 +17,17 @@ img {
 }
 
 body{
-    background-color: #dcdfe4;
+    background-color: var(--main-bg-color);
+}
+
+hr {
+    border-style: dotted none none none;
+    border-color: gray;
+    border-width: 5px;
+    width: 5%;
+}
+
+h1,
+h3{
+    color: var(--medium-text-color);
 }
