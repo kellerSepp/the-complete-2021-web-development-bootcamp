@@ -1,33 +1,105 @@
 :root {
     /* https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize */
     --main-bg-color:    #dcdfe4;
-    /* --other1:           #aca69f;
+    --other1:           #aca69f;
     --other2:           #adab76;
     --medium-text-color:#666b32;
-    --other4:          #0f211a; */
-}
-:root{
-    --other1:           #aca69f;
+    --dark-forest:      #0f211a;
+    --platinum:         #e8e8e8ff;
+    --russian-green:    #678d58ff;
+    --dark-liver-horses:#594236ff;
+    --fulvous:          #d98324ff;
+    --flame:            #dc602eff;
+
 }
 
-img {
+div.middle-container > div.profile > img {
     width: 200px;
     height: auto;
-    border-radius: 50%;
+    /* border-radius: 100%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.middle-container > div.skills > div.skill-row > img{
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 body{
     background-color: var(--main-bg-color);
+    margin: 0;
+    text-align: center;
+
 }
 
-hr {
-    border-style: dotted none none none;
-    border-color: gray;
-    border-width: 5px;
-    width: 5%;
+h1{
+    margin-top: 0;
+    font-size: 40px;
+    font-family: "Press Start 2P", fantasy;
 }
 
-h1,
+h2{
+    font-family: "Montserrat", sans-serif;
+}
+
 h3{
-    color: var(--medium-text-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+p{
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+}
+
+div.top-container > p > span {
+    text-transform: uppercase;
+}
+
+
+.top-container{
+    /* width: 200px;
+    height: 200px; */
+    background-color: var(--other1);
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+.middle-container{
+    /* background-color: var(--dark-liver-horses); */
+}
+
+.bottom-container{
+    /* background-color: var(--dark-forest); */
+    
+}
+
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.bottom-cloud{
+    position: absolute;   
+    left: 300px;
+    bottom: 300px;
+}
+
+.flaticon {
+    color: gray;
+}
+
+.flaticon a:link{
+    /* color: gold; */
+    color: gray;
+    text-decoration: none;
+}
+.flaticon a:visited{
+    color: gray;
+     text-decoration: none;
 }
