@@ -1,3 +1,14 @@
+/*
+  /$$$$$$                                                   /$$
+ /$$__  $$                                                 | $$
+| $$  \__/  /$$$$$$  /$$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$ | $$
+| $$ /$$$$ /$$__  $$| $$__  $$ /$$__  $$ /$$__  $$|____  $$| $$
+| $$|_  $$| $$$$$$$$| $$  \ $$| $$$$$$$$| $$  \__/ /$$$$$$$| $$
+| $$  \ $$| $$_____/| $$  | $$| $$_____/| $$      /$$__  $$| $$
+|  $$$$$$/|  $$$$$$$| $$  | $$|  $$$$$$$| $$     |  $$$$$$$| $$
+ \______/  \_______/|__/  |__/ \_______/|__/      \_______/|__/
+*/
+
 :root {
     /* https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize */
     --main-bg-color:    #dcdfe4;
@@ -13,7 +24,132 @@
 
 }
 
-div.middle-container > div.profile > img {
+body{
+    margin: 0;
+    text-align: center;
+
+}
+
+h1{
+    margin: 0rem auto 0 auto;
+    font-size: 2.5rem;
+    font-family: "Press Start 2P", fantasy;
+    line-height: 2;
+    color: var(--medium-text-color);
+
+}
+
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    color: var(--medium-text-color);
+    font-size: 2.5rem;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    color: var(--russian-green);
+    text-align: left;
+
+}
+
+p{
+    font-family: "Work Sans", sans-serif;
+    width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/*
+   /$$                                                                 /$$                           /$$    
+  | $$                                                                | $$                          | $$    
+ /$$$$$$    /$$$$$$   /$$$$$$           /$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$    /$$$$$$  /$$$$$$$  /$$$$$$  
+|_  $$_/   /$$__  $$ /$$__  $$ /$$$$$$ /$$_____/ /$$__  $$| $$__  $$|_  $$_/   /$$__  $$| $$__  $$|_  $$_/  
+  | $$    | $$  \ $$| $$  \ $$|______/| $$      | $$  \ $$| $$  \ $$  | $$    | $$$$$$$$| $$  \ $$  | $$    
+  | $$ /$$| $$  | $$| $$  | $$        | $$      | $$  | $$| $$  | $$  | $$ /$$| $$_____/| $$  | $$  | $$ /$$
+  |  $$$$/|  $$$$$$/| $$$$$$$/        |  $$$$$$$|  $$$$$$/| $$  | $$  |  $$$$/|  $$$$$$$| $$  | $$  |  $$$$/
+   \___/   \______/ | $$____/          \_______/ \______/ |__/  |__/   \___/   \_______/|__/  |__/   \___/  
+                    | $$                                                                                    
+                    | $$                                                                                    
+                    |__/                                                                                    
+*/
+
+section.top-container{
+    /* width: 200px;
+    height: 200px; */
+    background-color: var(--main-bg-color);
+    /* background-color: var(--other1); */
+
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+section.top-container > .top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+section.top-container > .bottom-cloud{
+    position: absolute;   
+    left: 300px;
+    bottom: 300px;
+}
+
+/* section.top-container > h1{ */
+section.top-container > h1{
+
+}
+
+section.top-container > p{
+    font-size: 2rem;
+    color: var(--medium-text-color);
+    font-weight: normal;
+
+}
+
+section.top-container > p > span{
+    text-transform: uppercase;
+}
+
+
+/*
+               /$$       /$$       /$$ /$$                                                   /$$               /$$                              
+              |__/      | $$      | $$| $$                                                  | $$              |__/                              
+ /$$$$$$/$$$$  /$$  /$$$$$$$  /$$$$$$$| $$  /$$$$$$           /$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$    /$$$$$$  /$$ /$$$$$$$   /$$$$$$   /$$$$$$ 
+| $$_  $$_  $$| $$ /$$__  $$ /$$__  $$| $$ /$$__  $$ /$$$$$$ /$$_____/ /$$__  $$| $$__  $$|_  $$_/   |____  $$| $$| $$__  $$ /$$__  $$ /$$__  $$
+| $$ \ $$ \ $$| $$| $$  | $$| $$  | $$| $$| $$$$$$$$|______/| $$      | $$  \ $$| $$  \ $$  | $$      /$$$$$$$| $$| $$  \ $$| $$$$$$$$| $$  \__/
+| $$ | $$ | $$| $$| $$  | $$| $$  | $$| $$| $$_____/        | $$      | $$  | $$| $$  | $$  | $$ /$$ /$$__  $$| $$| $$  | $$| $$_____/| $$      
+| $$ | $$ | $$| $$|  $$$$$$$|  $$$$$$$| $$|  $$$$$$$        |  $$$$$$$|  $$$$$$/| $$  | $$  |  $$$$/|  $$$$$$$| $$| $$  | $$|  $$$$$$$| $$      
+|__/ |__/ |__/|__/ \_______/ \_______/|__/ \_______/         \_______/ \______/ |__/  |__/   \___/   \_______/|__/|__/  |__/ \_______/|__/      
+*/
+
+section.middle-container > div.profile {
+    padding: 2rem 0 0 0;
+
+}
+
+section.middle-container > div.profile > p > a{
+    white-space: nowrap;
+}
+
+section.middle-container > div.skills{
+    /* background-color: var(--dark-liver-horses); */
+    background-color: var(--main-bg-color);
+    padding: 3rem 0 1rem 0;
+}
+
+section.middle-container > div.profile > p{
+    width: 40rem;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+section.middle-container > div.profile > img {
     width: 200px;
     height: auto;
     /* border-radius: 100%; */
@@ -22,72 +158,138 @@ div.middle-container > div.profile > img {
     margin-right: auto;
 }
 
-div.middle-container > div.skills > div.skill-row > img{
-    width: 150px;
-    height: auto;
+hr {
+    clear: both;
     display: block;
-    margin: 0 auto;
+    width: 100px;
+    margin: 4rem auto;
+    border: none;
+    border-top: 0.5rem dotted gray;
 }
 
-body{
-    background-color: var(--main-bg-color);
+div.skills > h2 {
     margin: 0;
+
+}
+
+div.skills > h2 > a {
+    display: inline-block;
+    padding: 30px 0 15px 0;
+
+}
+
+/* section.middle-container > div.skills > div.skill-row{ */
+div.skill-row{
+    display: block;
+    width: 50%;
+    margin: 100px auto;
+}
+
+div.skill-row > p{
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+div.skill-row > img.code-img{
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-right: 1.8rem;
+}
+div.skill-row > img.cook-img{
+    width: 25%;
+    height: auto;
+    float: right;
+    margin-left: 1.8rem;
+}
+
+div.contact-me > h3{
     text-align: center;
-
+    margin: 4rem 0 3rem 0;
 }
 
-h1{
-    margin-top: 0;
-    font-size: 40px;
-    font-family: "Press Start 2P", fantasy;
-}
+/*
+ /$$                   /$$     /$$                                                                     /$$               /$$                              
+| $$                  | $$    | $$                                                                    | $$              |__/                              
+| $$$$$$$   /$$$$$$  /$$$$$$ /$$$$$$    /$$$$$$  /$$$$$$/$$$$           /$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$    /$$$$$$  /$$ /$$$$$$$   /$$$$$$   /$$$$$$ 
+| $$__  $$ /$$__  $$|_  $$_/|_  $$_/   /$$__  $$| $$_  $$_  $$ /$$$$$$ /$$_____/ /$$__  $$| $$__  $$|_  $$_/   |____  $$| $$| $$__  $$ /$$__  $$ /$$__  $$
+| $$  \ $$| $$  \ $$  | $$    | $$    | $$  \ $$| $$ \ $$ \ $$|______/| $$      | $$  \ $$| $$  \ $$  | $$      /$$$$$$$| $$| $$  \ $$| $$$$$$$$| $$  \__/
+| $$  | $$| $$  | $$  | $$ /$$| $$ /$$| $$  | $$| $$ | $$ | $$        | $$      | $$  | $$| $$  | $$  | $$ /$$ /$$__  $$| $$| $$  | $$| $$_____/| $$      
+| $$$$$$$/|  $$$$$$/  |  $$$$/|  $$$$/|  $$$$$$/| $$ | $$ | $$        |  $$$$$$$|  $$$$$$/| $$  | $$  |  $$$$/|  $$$$$$$| $$| $$  | $$|  $$$$$$$| $$      
+|_______/  \______/    \___/   \___/   \______/ |__/ |__/ |__/         \_______/ \______/ |__/  |__/   \___/   \_______/|__/|__/  |__/ \_______/|__/      
+*/
 
-h2{
-    font-family: "Montserrat", sans-serif;
-}
-
-h3{
-    font-family: "Montserrat", sans-serif;
-}
-
-p{
-    font-family: "Work Sans", sans-serif;
-    text-align: center;
-}
-
-div.top-container > p > span {
-    text-transform: uppercase;
-}
-
-
-.top-container{
-    /* width: 200px;
-    height: 200px; */
-    background-color: var(--other1);
-    text-align: center;
-    position: relative;
-    padding-top: 100px;
-}
-
-.middle-container{
-    /* background-color: var(--dark-liver-horses); */
-}
-
-.bottom-container{
-    /* background-color: var(--dark-forest); */
+section.bottom-container{
+    background-color: var(--medium-text-color);
+    padding: 1.5rem 0;
     
 }
 
-.top-cloud{
-    position: absolute;
-    right: 300px;
-    top: 50px;
+section.bottom-container > a{
+    color: var(--other2);
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    margin: 1.5rem 1rem 0 1rem;
 }
 
-.bottom-cloud{
-    position: absolute;   
-    left: 300px;
-    bottom: 300px;
+section.bottom-container > p{
+    color: white;
+    font-size: .8rem;
+    font-weight: lighter;
+    margin: 1.5rem auto;
+}
+
+
+
+/*
+ /$$      /$$ /$$                        
+| $$$    /$$$|__/                        
+| $$$$  /$$$$ /$$  /$$$$$$$  /$$$$$$$    
+| $$ $$/$$ $$| $$ /$$_____/ /$$_____/    
+| $$  $$$| $$| $$|  $$$$$$ | $$          
+| $$\  $ | $$| $$ \____  $$| $$          
+| $$ \/  | $$| $$ /$$$$$$$/|  $$$$$$$ /$$
+|__/     |__/|__/|_______/  \_______/|__/
+*/
+
+.button-contact-me {
+   background: #D98324;
+   background-image: -webkit-linear-gradient(top, #D98324, #DC602E);
+   background-image: -moz-linear-gradient(top, #D98324, #DC602E);
+   background-image: -ms-linear-gradient(top, #D98324, #DC602E);
+   background-image: -o-linear-gradient(top, #D98324, #DC602E);
+   background-image: -webkit-gradient(to bottom, #D98324, #DC602E);
+   /* width: 50px; */
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 1.5rem;
+   font-weight: 100;
+   padding: 20px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin: 4rem;
+}
+
+.button-contact-me:hover {
+   border: solid #337FED 0;
+   background: #DC602E;
+   background-image: -webkit-linear-gradient(top, #DC602E, #D98324);
+   background-image: -moz-linear-gradient(top, #DC602E, #D98324);
+   background-image: -ms-linear-gradient(top, #DC602E, #D98324);
+   background-image: -o-linear-gradient(top, #DC602E, #D98324);
+   background-image: -webkit-gradient(to bottom, #DC602E, #D98324);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
 }
 
 .flaticon {
