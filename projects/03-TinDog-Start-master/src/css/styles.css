@@ -62,3 +62,31 @@ section#title {
     width: 60%;
     transform: rotate(25deg);
 }
+
+/* ##### features ##### */
+#features {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.fa-check-circle,
+.fa-bullseye,
+.fa-heart{
+    font-size: 3rem;
+    color: #ef8172;
+    margin: .5rem 0;
+}
+
+#features > div > div > div > h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#features > div > div > div > p {
+    color: #8f8f8f;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 70%;
+}
