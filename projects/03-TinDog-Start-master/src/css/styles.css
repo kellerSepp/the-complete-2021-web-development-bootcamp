@@ -78,6 +78,14 @@ section#title {
     margin: .5rem 0;
 }
 
+.fa-check-circle:hover,
+.fa-bullseye:hover,
+.fa-heart:hover{
+    font-size: 3rem;
+    color: #ff4c68;
+    margin: .5rem 0;
+}
+
 #features > div > div > div > h3 {
     font-size: 1.5rem;
     font-weight: bold;
