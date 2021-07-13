@@ -2,20 +2,22 @@
     padding-left: 1rem;
 }
 
-body{
-    font-family:  "Montserrat", sans-serif;
-}
-
 h1 {
-    font-size: 3.5rem;
+    font-family:  "Montserrat", sans-serif;
+    font-size: 3rem;
     line-height: 1.5;
     font-weight: 900;
 }
 
 section#title {
     background-color: #ff4c68;
-    color: white;
+}
 
+h1{
+    font-family: "Montserrat", serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .container-fluid{
@@ -29,37 +31,4 @@ section#title {
 
 .fa-google-play{
     padding-right: .5rem;
-}
-
-/* ##### navigation bar #### */
-
-.navbar{
-    padding: 0 0 4.5rem;
-}
-
-.navbar-brand{
-    font-family: Ubuntu;
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-
-.nav-item{
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.nav-link{
-    font-size: 1.2rem;
-    font-weight: lighter;
-}
-
-/* ##### download buttons ##### */
-.download-button{
-    margin: 1.4rem 1rem 0 0;
-}
-
-/* ##### image #### */
-.title-image{
-    width: 60%;
-    transform: rotate(25deg);
 }
