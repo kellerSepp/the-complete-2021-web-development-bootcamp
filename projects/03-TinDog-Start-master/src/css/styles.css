@@ -139,3 +139,50 @@ section#title {
     width: 15%;
     margin: 20px 20px 50px 50px;
 }
+
+/* ##### pricing ##### */
+#pricing{
+    padding: 6.3rem;
+    text-align: center;
+}
+
+#pricing > h2 {
+    margin: 0;
+    width: auto;
+}
+
+#pricing > p {
+    margin: .1rem 0 2rem 0;
+}
+
+#pricing > div.container{
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-column{
+    padding: 2% 3%;
+}
+
+.pricing-header {
+    /* font-size: 2rem; */
+}
+.pricing-card-header{
+    font-size: 2rem;
+}
+
+.card-body > h2{
+    padding-bottom: .5rem;
+}
+
+.card-header{
+}
+
+.card-header > h3{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+
+.pricing-button{
+}
