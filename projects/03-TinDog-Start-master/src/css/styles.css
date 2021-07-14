@@ -197,6 +197,10 @@ section#title {
     margin-bottom: 0;
     font-weight: bold;
 }
+.card-footer{
+    background-color: white;
+    border: 0;
+}
 
 
 .pricing-button{
