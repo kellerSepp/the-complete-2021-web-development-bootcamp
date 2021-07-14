@@ -202,6 +202,32 @@ section#title {
 .pricing-button{
 }
 
+/* ##### cta section ##### */
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.cta-header{
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0;
+
+}
+
+
+
+
+
+
+/* ##### footer section ##### */
+
+/* ##### media query section ##### */
+
 @media (max-width:1028px){
     #title{
         text-align: center;
