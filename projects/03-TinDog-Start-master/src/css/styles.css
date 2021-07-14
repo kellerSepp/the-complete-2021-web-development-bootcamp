@@ -201,3 +201,21 @@ section#title {
 
 .pricing-button{
 }
+
+@media (max-width:1028px){
+    #title{
+        text-align: center;
+        width: 100%;
+    }
+    .title-image{
+        position: static;
+        width: 60%;
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width:1028px){
+    .title-image{
+        padding-top: 3rem;
+    }
+}
