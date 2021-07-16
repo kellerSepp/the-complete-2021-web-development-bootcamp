@@ -4,27 +4,42 @@
 
 body{
     font-family:  "Montserrat", sans-serif;
+    text-align: center;
 }
 
-h1 {
-    font-size: 3.5rem;
-    line-height: 1.5;
-    font-weight: 900;
-}
-h2{
+h1, h2, h3, h4, h5, h6 {
     font-family:  "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
-    width: 70%;
-    margin: 0 auto;
 }
 
-section#title {
+p{
+    color: #8f8f8f;
+}
+
+
+/* ##### headings ##### */
+
+.big-heading{
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.colored-section{
     background-color: #ff4c68;
     color: white;
 }
 
+.white-section{
+    background-color: white;
+}
+
+
+/* ####### Containers ######## */
 .container-fluid{
     padding: 7% 15%;
 }
@@ -65,17 +80,13 @@ section#title {
     margin: 1.4rem 1rem 0 0;
 }
 
-#title .container-fluid {
-    padding: 3% 15% 7%;
-  }
+/*####### title section  ###### */
+#title .container-fluid{
+    padding: 3% 15%;
+    text-align: left;
+}
 
 /* ##### image #### */
-#title {
-    background-color: #ff4c68;
-    color: #fff;
-    text-align: left;
-  }
-
 .title-image{
     width: 20%;
     transform: rotate(25deg);
@@ -87,11 +98,10 @@ section#title {
 /* ##### features ##### */
 #features {
     position: relative;
-    text-align: center;
-    padding: 7% 15%;
-    /* padding-top: 4rem;
-    padding-bottom: 4rem; */
-    background-color: white;
+}
+
+.feature-title{
+    font-size: 1.5rem;
 }
 
 .fa-check-circle,
@@ -126,10 +136,7 @@ section#title {
 /* ##### testimonials ##### */
 
 #testimonials{
-    text-align: center;
     background-color: #ef8172;
-    color: white;
-    
 }
 
 .testimonial-image{
@@ -138,16 +145,9 @@ section#title {
     margin: 20px;
 }
 
-.carousel-item{
-    padding: 7% 15%;
-
-}
-
-
 /* ##### press ##### */
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -159,7 +159,6 @@ section#title {
 /* ##### pricing ##### */
 #pricing{
     padding: 6.3rem;
-    text-align: center;
 }
 
 #pricing > h2 {
@@ -179,9 +178,6 @@ section#title {
     padding: 2% 3%;
 }
 
-.pricing-header {
-    /* font-size: 2rem; */
-}
 .pricing-card-header{
     font-size: 2rem;
 }
@@ -190,48 +186,20 @@ section#title {
     padding-bottom: .5rem;
 }
 
-.card-header{
-}
-
 .card-header > h3{
     margin-bottom: 0;
     font-weight: bold;
 }
 .card-footer{
-    background-color: white;
     border: 0;
 }
 
-
-.pricing-button{
-}
-
 /* ##### cta section ##### */
-#cta{
-    background-color: #ff4c68;
-    text-align: center;
-    padding-bottom: 4rem;
-}
-
-.cta-header{
-    font-weight: bold;
-    color: white;
-    font-size: 4rem;
-    width: 80%;
-    margin: 0 auto;
-    padding: 5rem 0;
-
-}
-
 .cta-button{
     margin: 0 1.5rem;
 }
 
 /* ##### footer section ##### */
-#footer{
-    text-align: center;
-}
-
 .footer-symbol{
     font-size: 1.5rem;
     padding: 2rem .8rem;
