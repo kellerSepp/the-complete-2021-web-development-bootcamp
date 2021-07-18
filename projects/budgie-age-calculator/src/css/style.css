@@ -1,0 +1,27 @@
+body{
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button{
+    padding: .5rem 2rem;
+    margin: 0rem 1rem 2rem 1rem;
+}
+
+table, td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: left;
+    color: gray;
+    font-size: small;
+    
+}
+
+th,td{
+    padding: .5rem 1rem;
+    
+}
+
+td{
+}
