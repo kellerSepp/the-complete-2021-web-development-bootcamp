@@ -3,9 +3,8 @@ function setGreeting(){
     //depending on time
     userName = document.getElementById("uName").value;
     document.getElementById("userName").innerHTML = userName;
-    let time = Math.floor(getTime());
-    console.log(time);
-    return document.getElementById("userGreeting").innerHTML = "Hello";
+    let time = getTime();
+    // return document.getElementById("userGreeting").innerHTML = "Hello";
     //Say Good Morning name
     if(time >= 4 && time <= 8){
         document.getElementById("userGreeting").innerHTML = "Good Morning";
@@ -29,6 +28,7 @@ function setGreeting(){
 }
 
 function getTime(){
+    console.log();
     let time = (Math.random() * 24);
-    return time;
+    return new Date().getHours();
 }
