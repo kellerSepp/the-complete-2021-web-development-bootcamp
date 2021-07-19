@@ -1,9 +1,9 @@
 function calculateLove(){
-    // var user = prompt("Thank you for trusting me.\nPlease tell me your name.");
+    var user = prompt("Thank you for trusting me.\nPlease tell me your name.");
     
-    // var partner = prompt("Thank you very much " + user + "!\nNow I need the name of your spouse, please!")
-    var user = "bob";
-    var partner = "sara";
+    var partner = prompt("Thank you very much " + user + "!\nNow I need the name of your spouse, please!")
+    // var user = "bob";
+    // var partner = "sara";
 
     var n = Math.random();
     var lovePerc = Math.round((n * 100))+1;

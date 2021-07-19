@@ -1,18 +1,43 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
-    box-sizing: border-box;
+    font-family: sans-serif;
 }
 .logo{
     background-color: hotpink;
+    color: white;
     display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 main{
+    background-color: pink;
+    color: black;
     padding: 1rem;
 }
 
 button{
     padding: 1rem 2rem;
+}
+
+footer{
+    padding: 1rem;
+    background-color: rgb(180, 0, 111);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+footer *{
+    margin: 0;
+}
+
+footer > p{
+    margin: 1rem 0;
+    /* padding: 1rem 0; */
 }
