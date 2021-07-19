@@ -5,7 +5,7 @@ function setGreeting(){
     document.getElementById("userName").innerHTML = userName;
     let time = Math.floor(getTime());
     console.log(time);
-
+    return document.getElementById("userGreeting").innerHTML = "Hello";
     //Say Good Morning name
     if(time >= 4 && time <= 8){
         document.getElementById("userGreeting").innerHTML = "Good Morning";
