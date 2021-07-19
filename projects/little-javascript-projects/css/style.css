@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+button{
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
+
+.article-code{
+    background-color: lightgray;
+    padding: 1rem 2rem;
+}
