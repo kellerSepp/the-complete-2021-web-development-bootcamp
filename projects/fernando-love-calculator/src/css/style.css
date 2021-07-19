@@ -8,21 +8,54 @@ body{
 .logo{
     background-color: hotpink;
     color: white;
-    display: inline-block;
     font-weight: bold;
+}
+
+.logo > a{
+    display: inline-block;
+    /* background-color: white; */
     font-size: 2rem;
-    width: 100%;
     padding: 1rem;
+}
+
+.logo > a:link{
+    color: #D41C62;
+    text-decoration: none;
+}
+
+.logo > a:visited{
+    color: #D41C62;
+}
+
+.logo > a:hover{
+    color: #AD1CD4;
+}
+
+.logo > a:active{
+    color: #D41C62;    
+}
+
+h1, h2{
+    color: #750F36
+    color: #D41C62;    
+}
+strong{
+    color: #D41C62;    
+    color: #750F36
+
 }
 
 main{
     background-color: pink;
     color: black;
+    color: #D41C62;
     padding: 1rem;
 }
 
 button{
     padding: 1rem 2rem;
+    margin: 2rem 2rem;
+    font-size: 1.2rem;
 }
 
 footer{
