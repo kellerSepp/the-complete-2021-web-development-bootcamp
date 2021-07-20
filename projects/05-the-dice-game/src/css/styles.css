@@ -12,6 +12,8 @@
 
 body {
   background-color: #393E46;
+  display: block;
+  margin: 0;
 }
 
 h1 {
@@ -21,7 +23,10 @@ h1 {
   font-size: 8rem;
   color: #4ECCA3;
 }
-
+h2{
+  font-family: sans-serif;
+  color: #EEEEEE;
+}
 p {
   font-size: 2rem;
   color: #4ECCA3;
@@ -33,9 +38,20 @@ img {
 }
 
 footer {
+  display: block;
+  bottom: 0;
   margin-top: 5%;
-  color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
+  padding: 2rem;
+}
 
+footer p{
+  font-size: 12px;
+  margin: 0;
+  color: #EEEEEE;
+}
+
+.winner{
+  color:red;
 }
