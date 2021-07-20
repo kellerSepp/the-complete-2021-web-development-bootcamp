@@ -32,3 +32,7 @@ function getTime(){
     let time = (Math.random() * 24);
     return new Date().getHours();
 }
+
+function addClass(name){
+    document.querySelector("h1").classList.add(name);
+}
