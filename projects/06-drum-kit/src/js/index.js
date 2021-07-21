@@ -30,14 +30,10 @@ function handleClick(){
             break;
         default: console.log(this);
     }
-}
-var elements = document.querySelectorAll("button");
-for(i=0; i<=elements.length-1;i++){
-
-    // elements[i].addEventListener("click",handleClick);
+    buttonAnimation(this.innerHTML);
 }
 
-elements.forEach(function(currentValue, listObj) {
+document.querySelectorAll("button").forEach(function(currentValue, listObj) {
     currentValue.addEventListener("click",handleClick);
 
     console.log(currentValue.classList);
@@ -76,5 +72,14 @@ function keyHandle(key){
             break;
         default: console.log(this);
     }
+    buttonAnimation(key);
+}
+
+function buttonAnimation(key){
+    document.querySelector("." + key).classList.add("pressed");
+    setTimeout(function(){
+        document.querySelector("." + key).classList.remove("pressed");
+    }, 100);
+    
 }
 
