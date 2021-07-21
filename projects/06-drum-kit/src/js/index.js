@@ -35,8 +35,6 @@ function handleClick(){
 
 document.querySelectorAll("button").forEach(function(currentValue, listObj) {
     currentValue.addEventListener("click",handleClick);
-
-    console.log(currentValue.classList);
   });
 
 document.addEventListener("keypress",function(event){keyHandle(event.key);})
