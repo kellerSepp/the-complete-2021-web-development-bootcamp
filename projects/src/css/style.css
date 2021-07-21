@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.project{
+    background-color: gray;
+}
+
+.project *{
+    display: inline-block;
+
+}
+
+.figure-left{
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+TODO: display project correctly
