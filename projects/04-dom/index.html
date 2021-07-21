@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html  lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Website</title>
+        <meta name="description" content="Just some messing arround with the DOM to understand it">
+        <meta name="author" content="Sebastian Kellermann">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="src/css/style.css?2021-07-19:1730">
+    </head>
+    <body onload="addClass('huge')">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <h1>Hello</h1>
+
+        <h2><span id="userGreeting">Hello</span> <span id="userName">User</span></h2>
+        
+        <div class="userNameInput">
+            <h3>Please tell me your name so I can greet you properly.</h3>
+            <form action="#" onsubmit="setGreeting(); return false;">
+                <label for="uName">Name:</label>
+                <input type="text" id="uName" name="uName">
+                <input type="submit" value="Confirm">
+            </form>
+        </div>
+
+
+
+        
+        
+        <script src="src/js/index.js?2021-07-19:1730" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.huge{
+    font-size: 10rem;
+    color: red;
+    font-weight: bold;
+}
