@@ -1,0 +1,136 @@
+html{
+margin-top: -10px;
+}
+
+html, body{
+    margin: 0;
+}
+header{
+    height: 180px;
+    /* background-color: yellow; */
+}
+
+header img{
+    float: left;
+    width: 180px;
+    height: auto;
+    position: left;
+    position: center;
+}
+.info li, .laender li{    
+    display: inline;
+}
+.laender{
+    position: relative;
+    top:140px;
+    margin-left: 4em;
+}
+
+.info li{
+    padding-left: 1.5em;
+}
+
+.laender li{
+    padding-right: 1.5em;
+
+}
+
+.info{
+    margin-right: 0.5em;
+
+    float:right;
+}
+
+main{
+    width: 69%;
+    float: left;
+    
+}
+
+.article{
+   /* background-color: turquoise;*/
+    padding: 1em;
+}
+
+.bild{
+    width: 1000px;
+    margin: 0;
+}
+
+.bild img{
+    width: 1000px;
+    height: auto;
+}
+
+.other{
+    width: auto;
+    margin-left: 70%;
+    padding: 1em;
+}
+.other aside{
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+.other ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer{
+    /* background-color: blue; */
+    height: 50px;
+    clear: both;
+}
+.footer ul{
+    text-align: center;
+    padding-top: 1em;
+}
+
+.footer li{
+    display: inline;
+    padding-right: 1em;
+}
+
+.footer a{
+    /* color: white; */
+}
+
+
+.active{
+    background-color: gray;
+}
+
+
+
+/* 
+.d8b.  d88888b d8888b. d888888b  .o88b.  .d8b. 
+d8' `8b 88'     88  `8D   `88'   d8P  Y8 d8' `8b
+88ooo88 88ooo   88oobY'    88    8P      88ooo88
+88~~~88 88~~~   88`8b      88    8b      88~~~88
+88   88 88      88 `88.   .88.   Y8b  d8 88   88
+YP   YP YP      88   YD Y888888P  `Y88P' YP   YP 
+*/
+
+.africa{
+    list-style-type: none;
+}
+
+.tunesien img{
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+.tunesien > div{
+    height: 112px;
+    margin-left: 210px;
+    padding: 1em;
+}
+
+.h3 p{
+    width: 60%;
+}
+
+
+@media()

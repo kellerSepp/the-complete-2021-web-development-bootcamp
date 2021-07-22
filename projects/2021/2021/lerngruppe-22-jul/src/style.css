@@ -1,0 +1,132 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+section{
+    border: 1px solid black;
+}
+
+#first-page *{
+    text-align: center;
+}
+#first-page > h3{
+    margin: 3rem 0;
+}
+
+h2{
+    font-size: 64px;
+    /* text-align: center; */
+    padding: 3rem 0;
+}
+
+h3, h4, h5 {
+    color: rgb(0,140,180);
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    /* text-align: center; */
+}
+
+h3{
+    font-size: 28px;
+    margin-top: 3rem;
+    margin-bottom: .2rem;
+}
+
+h4{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+h5
+{
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+p{
+    margin: 0 10% 2rem 10%;
+    line-height: 1.5rem;
+    text-align: justify;
+    
+}
+.page-content > cite{
+    margin: 2rem 10%;
+}
+
+.page-footer{
+    padding: 5rem 10% 2rem 10%;
+    text-align: center;
+}
+
+.page-footer > small{
+    display: block;
+    margin: 1rem 0;
+}
+
+.table-of-content-list{
+    font-size: small;
+    margin-left: 6rem;
+    counter-reset: item;
+}
+
+.table-of-content-list > li {
+    list-style-type: none;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.table-of-content-list > li::after {
+    /* content: "....."counter(item);
+    counter-increment: item;
+    display: inline-block;
+    right: 0; */
+}
+
+li > a:link {
+    text-decoration: none;
+}
+
+.table-of-content-list ol {
+    margin-left: 0;
+    padding-left: .5rem;
+}
+
+.table-of-content-list ol li{
+    list-style-type: none;
+}
+
+.scrum-def{
+    margin-left: 10%;
+    margin-bottom: 2rem;
+}
+
+
+.strong-centered{
+    display: block;
+    text-align: center;
+}
+
+#specialP{
+    margin-bottom: 0;
+}
+
+.blockCite{
+    /* display: block; */
+    color: gray;
+
+}
+
+blockquote{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.blockCite::before{
+    content: "~ ";
+}
