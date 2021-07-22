@@ -9,8 +9,35 @@ body{
 }
 
 
+
+/* 
+                                                            /$$
+                                                           | $$
+  /$$$$$$   /$$$$$$  /$$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$ | $$
+ /$$__  $$ /$$__  $$| $$__  $$ /$$__  $$ /$$__  $$|____  $$| $$
+| $$  \ $$| $$$$$$$$| $$  \ $$| $$$$$$$$| $$  \__/ /$$$$$$$| $$
+| $$  | $$| $$_____/| $$  | $$| $$_____/| $$      /$$__  $$| $$
+|  $$$$$$$|  $$$$$$$| $$  | $$|  $$$$$$$| $$     |  $$$$$$$| $$
+\____  $$ \_______/|__/  |__/ \_______/|__/      \_______/|__/
+/$$  \ $$                                                     
+|  $$$$$$/                                                     
+\______/                                                      
+ */
+
+.text-misc-dark{
+    color: #6C6664;
+}
+.text-misc-light{
+    color: #232B26;
+    color: #797365;
+}
+
+.one, .three{
+    background-color: #232b26;
+}
+
 .card-project{
-    background-color: gray;
+    /* background-color: gray; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -28,14 +55,32 @@ body{
 */
 
 
-@media only screen and (max-width:599px){
+/* @media only screen and (max-width:599px){ */
+@media only screen and (min-width:280px){
+
+/*
+           /$$           /$$                 /$$
+          | $$          | $$                | $$
+  /$$$$$$ | $$  /$$$$$$ | $$$$$$$   /$$$$$$ | $$
+ /$$__  $$| $$ /$$__  $$| $$__  $$ |____  $$| $$
+| $$  \ $$| $$| $$  \ $$| $$  \ $$  /$$$$$$$| $$
+| $$  | $$| $$| $$  | $$| $$  | $$ /$$__  $$| $$
+|  $$$$$$$| $$|  $$$$$$/| $$$$$$$/|  $$$$$$$| $$
+\____  $$|__/ \______/ |_______/  \_______/|__/
+/$$  \ $$                                      
+|  $$$$$$/                                      
+\______/                                        
+*/
+
     h1, h2, h3, p, a{
         /* text-align: center; */
     }
     h1, h2{
         color: white;
         line-height: 2;
-        /* margin: 1rem 0; */
+    }
+    h2{
+        font-size: 18px;
     }
 
     .container{
@@ -46,83 +91,183 @@ body{
 
     section{
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        /* display: flex; */
+        /* justify-content: center;
+        align-items: center; */
         scroll-snap-align: start;
         border: 2px solid #232b26;
     }
 
-    .one{
-    }
-    .two{
-    }
-    .three{
-    }
     
-    .card-project{
-        display: block;
-        background-color: #F1F2EE;
-    }
-    
-    .card-project > *{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        color: #232b26
-    }
+/*                                   
+   /$$$$$$  /$$$$$$$   /$$$$$$ 
+  /$$__  $$| $$__  $$ /$$__  $$
+ | $$  \ $$| $$  \ $$| $$$$$$$$
+ | $$  | $$| $$  | $$| $$_____/
+ |  $$$$$$/| $$  | $$|  $$$$$$$
+  \______/ |__/  |__/ \_______/
+*/
+.one{
+    text-align: center;
+    color: #F1F2EE;
+    position: relative;
+}
+.one > div {
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
 
-    .figure-left{
-        /* display: block; */
-        margin: 0 1rem;
-        text-align: center;
-        /* background-color: antiquewhite; */
-    }
-    .project-div{
-        /* background-color: lightgreen; */
-        text-align: center;
-        padding: 1.5rem 10%;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        line-height: 2;
-    }
-
-    .project-div > p{
-    }
-
-    .project-div > h3{
-        padding-bottom: 1rem;
-    }
-
-    .card-project > a{
-        /* display: block; */
-    }
 }
 
-.card-div{
-    display: inline-block;
-    width: 280px;
+/* 
+/$$                            
+| $$                            
+/$$$$$$   /$$  /$$  /$$  /$$$$$$ 
+|_  $$_/  | $$ | $$ | $$ /$$__  $$
+| $$    | $$ | $$ | $$| $$  \ $$
+| $$ /$$| $$ | $$ | $$| $$  | $$
+|  $$$$/|  $$$$$/$$$$/|  $$$$$$/
+ \___/   \_____/\___/  \______/ 
+ */
+
+ .one{
+     margin: 0 2%;
+
+ }
+
+section{
+    margin: 0 2%;
 }
 
-.figure-left{
-       
+.two > .scroll-down{
+    padding-top: 6rem;
 }
 
-img{
+.two > .card {
+    margin-top: 8rem;
+}
+
+.scroll-down{
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.scroll-down > ul > li{
+    list-style: none;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 0 0 4rem 0;
+}
+
+.one > div > h2{
+    font-weight: lighter;
+    padding-bottom: 5rem;
+}
+
+
+/* 
+                                 /$$    
+                                | $$    
+ /$$$$$$   /$$$$$$   /$$$$$$$ /$$$$$$  
+ /$$__  $$ /$$__  $$ /$$_____/|_  $$_/  
+| $$  \__/| $$$$$$$$|  $$$$$$   | $$    
+| $$      | $$_____/ \____  $$  | $$ /$$
+| $$      |  $$$$$$$ /$$$$$$$/  |  $$$$/
+|__/       \_______/|_______/    \___/   
+*/
+        
+        
+
+
+/*   
+                               /$$
+                              | $$
+ /$$$$$$$  /$$$$$$   /$$$$$$   /$$$$$$$
+ /$$_____/ |____  $$ /$$__  $$ /$$__  $$
+| $$        /$$$$$$$| $$  \__/| $$  | $$
+| $$       /$$__  $$| $$      | $$  | $$
+|  $$$$$$$|  $$$$$$$| $$      |  $$$$$$$
+\_______/ \_______/|__/       \_______/
+*/
+
+
+.card{
+    display: block;
+    background-color: #F1F2EE;
+    border-radius: 6px;
+    margin-top: 4rem;
+    box-shadow: 0 16px 38px -12px rgb(94.51% 94.9% 93.33% / 56%),
+                0 4px 25px 0px rgb(94.51% 94.9% 93.33% / 12%),
+                0 8px 10px -5px rgb(94.51% 94.9% 93.33% / 20%);
+}
+
+.card > div > h3{
+    text-align: left;
+    /* padding-bottom: 1rem; */
+    /* color: #232b26 */
+}
+
+.card > figure > img{
+    border-radius: 6px;
     display: inline-block;
     width: 250px;
     height: auto;
+    box-shadow: 0 16px 38px -12px rgb(0 0 0 / 56%),
+                0 4px 25px 0px rgb(0 0 0 / 12%),
+                0 8px 10px -5px rgb(0 0 0 / 20%);
+    margin-top: -28px;
+    position: relative;
+    z-index: 1;
+}
+        
+.card > figure{
+    text-align: center;
 }
 
-.project > div{
-    /* float: right; */
-    /* width: auto; */
+.card > footer{
+    text-align: center;
 }
 
-h3{
+.card > footer > a{
+    display: block;
+    border-radius: 0 0 6px 6px;
+    background-color: #7e8290;
+    color: #F1F2EE;
+    height: 3rem;
+    line-height: 3rem;
+}
+.card > footer > a:link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.project-div{
+    text-align: justify;
+    font-size: 14px;
+    /* padding: 1.5rem 0; */
+    padding: 1.5rem 5%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 2;
+    color: #232b26;
+}
+
+.project-div > h3{
+    padding-bottom: .2rem;
+    color: #6c6664;
+}    
 
 }
+
+
+
 /* TODO: display project correctly */
 
 /* 
