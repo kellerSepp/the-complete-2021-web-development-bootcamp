@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon</title>
+    <meta
+      name="description"
+      content="This is a completely free Simon game. You can play it in your browser. No Ads, no nothing. Just have fun!"
+    />
+    <meta
+      name="keywords"
+      content="Simon Game, Simon, Browsergame, free, game"
+    />
+    <meta name="author" content="Sebastian Kellerman" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css?2021-07-29:1928" />
+  </head>
+  <body>
+    <h1 id="level-title">Press A Key to Start</h1>
+    <div class="container">
+      <div lass="row">
+        <div type="button" id="green" class="btn green"></div>
 
-<head>
-  <meta charset="utf-8">
-  <title>Simon</title>
-  <meta name="description" content="This is a completely free Simon game. You can play it in your browser. No Ads, no nothing. Just have fun!">
-  <meta name="keywords" content="Simon Game, Simon, Browsergame, free, game"/>
-  <meta name="author" content="Sebastian Kellerman" />
-  <meta http-equiv="cache-control" content="no-cache"/>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  <link rel="stylesheet" href="src/css/styles.css?2021-07-29:1928">
-</head>
-<body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div lass="row">
-
-      <div type="button" id="green" class="btn green">
-
+        <div type="button" id="red" class="btn red"></div>
       </div>
 
-      <div type="button" id="red" class="btn red">
-
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
       </div>
     </div>
 
-    <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
-    </div>
-
-  </div>
-
-<script type="text/javascript" src="src/js/game.js?2021-07-29:1928"></script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="src/js/game.js?2021-07-29:1928"
+    ></script>
+  </body>
 </html>
