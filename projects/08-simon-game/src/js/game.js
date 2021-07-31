@@ -1,3 +1,6 @@
+var userClickedPattern = [];
+
+
 function nextSequence() {
     var randomNumber = Math.floor(Math.random() * 4);
     return randomNumber;
@@ -8,27 +11,66 @@ function selectButton(number) {
     switch (number) {
         case 0:
             $("#green").fadeOut(100).fadeIn(100);
-            audio = new Audio("/src/sounds/green.mp3");
-            audio.play();
+            playSound("green");
             break;
-        case 1: 
+        case 1:
             $("#red").fadeOut(100).fadeIn(100);
-            audio = new Audio("/src/sounds/red.mp3");
-            audio.play();
+            playSound("red");
             break;
-        case 2: 
+        case 2:
             $("#yellow").fadeOut(100).fadeIn(100);
-            audio = new Audio("/src/sounds/yellow.mp3");
-            audio.play();
+            playSound("yellow");
             break;
         case 3:
             $("#blue").fadeOut(100).fadeIn(100);
-            audio = new Audio("/src/sounds/blue.mp3");
-            audio.play();
+            playSound("blue");
             break;
-        default: console.warn("Totally wrong random Number: " + number);
+        default:
+            console.warn("Totally wrong random Number: " + number);
             break;
     }
+}
+
+$(".btn").click(function () {
+    buttonHandler(this);
+});
+
+function buttonHandler(button) {
+    let userChosenColor = button.id;
+    console.group("button infos");
+    switch (userChosenColor) {
+        case "green":
+            console.info("%c" + userChosenColor, "background-color:green; color:white; border:1px solid black; border-radius: 6px;padding:0.3rem;");
+            userClickedPattern.push(userChosenColor);
+            playSound(userChosenColor);
+            break;
+        case "red":
+            console.info("%c" + userChosenColor, "background-color:red; color:white; border:1px solid black; border-radius: 6px;padding:0.3rem;");
+            userClickedPattern.push(userChosenColor);
+            playSound(userChosenColor);
+            break;
+        case "yellow":
+            console.info("%c" + userChosenColor, "background-color:yellow; border:1px solid black; border-radius: 6px;padding:0.3rem;");
+            userClickedPattern.push(userChosenColor);
+            playSound(userChosenColor);
+            break;
+        case "blue":
+            console.info("%c" + userChosenColor, "background-color:blue; color:white; border:1px solid black; border-radius: 6px;padding:0.3rem;");
+            userClickedPattern.push(userChosenColor);
+            playSound(userChosenColor);
+            break;
+        default:
+            console.warn("unknown button id: " + userChosenColor);
+            break;
+    }
+    console.dir(button);
+    console.info(userClickedPattern);
+    console.groupEnd();
+}
+
+function playSound(name){
+    audio = new Audio("/src/sounds/"+ name +".mp3");
+    audio.play();
 }
 
 // $("#someElement").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
