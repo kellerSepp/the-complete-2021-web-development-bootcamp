@@ -19,6 +19,11 @@ $(document).click(function (tap) {
   startGame();
   console.info("tap " + tap);
 });
+ 
+$(".btn").click(function () {
+    if (!gameIsRunning) return;
+    buttonHandler(this);
+  });
 
 function startGame() {
     gameIsRunning = true;
@@ -37,8 +42,8 @@ function nextSequence() {
   var randomNumber = Math.floor(Math.random() * 4);
   currentLevel++;
   updateLevelGui();
+  selectButton(randomNumber);
   console.info("randomNumber " + randomNumber);
-  return randomNumber;
 };
 
 function selectButton(number) {
@@ -66,9 +71,6 @@ function selectButton(number) {
   }
 };
 
-$(".btn").click(function () {
-  buttonHandler(this);
-});
 
 function buttonHandler(button) {
   let userChosenColor = button.id;
