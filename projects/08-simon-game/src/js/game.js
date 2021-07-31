@@ -43,21 +43,25 @@ function buttonHandler(button) {
             console.info("%c" + userChosenColor, "background-color:green; color:white; border:1px solid black; border-radius: 6px;padding:0.3rem;");
             userClickedPattern.push(userChosenColor);
             playSound(userChosenColor);
+            animateButton(userChosenColor);
             break;
         case "red":
             console.info("%c" + userChosenColor, "background-color:red; color:white; border:1px solid black; border-radius: 6px;padding:0.3rem;");
             userClickedPattern.push(userChosenColor);
             playSound(userChosenColor);
+            animateButton(userChosenColor);
             break;
         case "yellow":
             console.info("%c" + userChosenColor, "background-color:yellow; border:1px solid black; border-radius: 6px;padding:0.3rem;");
             userClickedPattern.push(userChosenColor);
             playSound(userChosenColor);
+            animateButton(userChosenColor);
             break;
         case "blue":
             console.info("%c" + userChosenColor, "background-color:blue; color:white; border:1px solid black; border-radius: 6px;padding:0.3rem;");
             userClickedPattern.push(userChosenColor);
             playSound(userChosenColor);
+            animateButton(userChosenColor);
             break;
         default:
             console.warn("unknown button id: " + userChosenColor);
@@ -72,6 +76,14 @@ function playSound(name){
     audio = new Audio("/src/sounds/"+ name +".mp3");
     audio.play();
 }
+
+function animateButton(currentColor){
+    $("#"+currentColor).addClass("pressed");
+    setTimeout(function(){
+        $("#"+currentColor).removeClass("pressed");
+    }, 100);
+}
+
 
 // $("#someElement").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 
