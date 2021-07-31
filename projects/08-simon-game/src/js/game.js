@@ -1,5 +1,7 @@
+var gamePattern = [];
 var userClickedPattern = [];
 var gameIsRunning = false;
+var buttonColours = ["green", "red", "yellow", "blue"];
 
 var currentLevel = 0;
 // Main Game
@@ -17,38 +19,59 @@ $(document).click(function (tap) {
     return;
   }
   startGame();
-  console.info("tap " + tap);
 });
- 
+
 $(".btn").click(function () {
-    if (!gameIsRunning) return;
-    buttonHandler(this);
-  });
+  if (!gameIsRunning) return;
+  buttonHandler(this);
+});
 
 function startGame() {
-    gameIsRunning = true;
-    nextSequence();
-};
+  gameIsRunning = true;
+  nextSequence();
+}
 
 function checkGameState() {
   return gameIsRunning;
-};
+}
 
 function updateLevelGui() {
   $("#level-title").html("Level " + currentLevel);
-};
+}
 
 function nextSequence() {
-  var randomNumber = Math.floor(Math.random() * 4);
   currentLevel++;
   updateLevelGui();
+  let randomNumber = Math.floor(Math.random() * 4);
+  let color = buttonColours[randomNumber];
   selectButton(randomNumber);
-  console.info("randomNumber " + randomNumber);
-};
+  gamePattern.push(color);
+  console.info("gamePattern " + gamePattern);
+  let cb = createConsoleButton(color);
+  console.group("Last button of gamePattern");
+  console.info(cb[0],cb[1]);
+  console.groupEnd();
+}
 
-function selectButton(number) {
+function createConsoleButton(color){
+    let cssColor = "";
+    let stringArray = [];
+    stringArray.push("%c" + color);
+    stringArray.push("background-color:" + color + "; color:"+ ((color == "yellow") ? ("black") : ("white")) + "; border:1px solid black; border-radius: 6px;padding:0.3rem;");
+    // (color == "yellow") ? (console.info(
+    //   "%c" + color,
+    //   "background-color:" + color + "; color:black"+ "; border:1px solid black; border-radius: 6px;padding:0.3rem;"
+    // )) : (console.info(
+    //   "%c" + color,
+    //   "background-color:" + color + "; color:white"+ "; border:1px solid black; border-radius: 6px;padding:0.3rem;"
+    // ));
+    // console.table(stringArray);
+    return stringArray;
+}
+
+function selectButton(color) {
   var audio;
-  switch (number) {
+  switch (color) {
     case 0:
       $("#green").fadeOut(100).fadeIn(100);
       playSound("green");
@@ -66,11 +89,10 @@ function selectButton(number) {
       playSound("blue");
       break;
     default:
-      console.warn("Totally wrong random Number: " + number);
+      console.warn("Totally wrong color: " + color);
       break;
   }
-};
-
+}
 
 function buttonHandler(button) {
   let userChosenColor = button.id;
@@ -119,19 +141,21 @@ function buttonHandler(button) {
   console.dir(button);
   console.info(userClickedPattern);
   console.groupEnd();
-};
+}
+
+function checkAnswer() {}
 
 function playSound(name) {
   audio = new Audio("/src/sounds/" + name + ".mp3");
   audio.play();
-};
+}
 
 function animateButton(currentColor) {
   $("#" + currentColor).addClass("pressed");
   setTimeout(function () {
     $("#" + currentColor).removeClass("pressed");
   }, 100);
-};
+}
 
 // $("#someElement").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 
