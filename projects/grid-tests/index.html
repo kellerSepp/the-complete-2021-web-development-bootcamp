@@ -2,29 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport," content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Testing out different CSS Grid possibilities.">
     <meta name="author" content="Sebastian Kellermann">
     <meta http-equiv="cache-control" content="no-cache">
     
-    <title>New document</title>
+    <title>Testing Grid Things</title>
     
     <link rel="stylesheet" href="index.css?2021-01-01:01">
 </head>
 <body>
     <h1>Testing Grid Things</h1>
+    <section>
+        <p>This page is for displaying several things you can do using CSS-Grids.</p>
+        <p>Feel free to check the code via Developertools (Chrome/Firefox : F12)</p>
+    </section>
 
-    <div class="container-1">
-        <nav class="nav-1">Navbar</nav>
-        <div class="main-1">Main</div>
-        <aside class="sidebar-1">Sidebar</aside>
-        <div class="content1-1">Content 1</div>
-        <div class="content2-1">Content 2</div>
-        <div class="content3-1">Content 3</div>
-        <footer class="footer-1">Footer</footer>
-    </div>
+    <article class="responsive">
+        <h2>grid-template-areas</h2>
+        <p>
+            In this example I am using grid-template-ares to define the layout.
+        </p>
+        <div class="container-1">
+            <nav class="nav-1">Navbar</nav>
+            <div class="main-1"><p>Main</p></div>
+            <aside class="sidebar-1">Sidebar</aside>
+            <div class="content1-1">Content 1</div>
+            <div class="content2-1">Content 2</div>
+            <div class="content3-1">Content 3</div>
+            <footer class="footer-1">Footer</footer>
+        </div>
+    </article>
     
-    <footer>© S. Kellermann</footer>
+    <footer class="main-footer">© S. Kellermann</footer>
     <script type="text/javascript" src="" async="async" defer="defer"></script>
 </body>
 </html>
