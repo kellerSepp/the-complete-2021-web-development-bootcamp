@@ -1,10 +1,14 @@
+:root {
+    --main-padding: 1rem;
+    --main-margin: 1rem;
+  }
+
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body, h1, h2, p{
     margin: 0;
-    
 }
 
 /* 
@@ -14,16 +18,49 @@ body, h1, h2, p{
 #A19882
 */
 
-article.responsive{
-    /* background-color: yellowgreen; */
+/* 
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+*/
+
+h1{
+    margin: 1rem;
+    text-align: center;
+}
+body > section{
+    margin: 0 auto;
+    text-align: center;
+    width: 60ch;
+    line-height: 1.5;
+}
+
+article{
+    margin: var(--main-margin);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    /* background-color: #FEF7DC; */
+    padding: var(--main-padding);
+    border-radius: 16px;
+}
+
+article.responsive > h2{
+    margin-bottom: 1rem;
+}
+
+article.responsive > h2::after{
+    content: " (responsive)";
+    font-style: italic;
+    color: gray;
+}
+
+section > p{
+   padding-top: 0px;
 }
 
 .container-1{
     display: grid;
     height: 85vh;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 95%;
+    margin: var(--main-margin) auto;
     text-align: center;
     /* background-color: #A19882; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -77,6 +114,12 @@ article.responsive{
     background-color: #A19882;
 }
 
+body > footer{
+    font-size: small;
+    color: #A19882;
+    text-align: center;
+}
+
 @media only screen and (max-width:700px) {
     h1{
         font-size: 150%;
@@ -84,6 +127,11 @@ article.responsive{
 
     h1, .container-1, .main-footer{
         text-align: center;
+    }
+
+    body > section {
+        width: auto;
+        /* text-align: justify; */
     }
 
     .container-1{
