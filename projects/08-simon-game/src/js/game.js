@@ -146,7 +146,7 @@ function buttonHandler(button) {
 function checkAnswer() {}
 
 function playSound(name) {
-  audio = new Audio("/src/sounds/" + name + ".mp3");
+  audio = new Audio("src/sounds/" + name + ".mp3");
   audio.play();
 }
 
