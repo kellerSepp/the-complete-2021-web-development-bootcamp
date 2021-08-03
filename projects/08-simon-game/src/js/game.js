@@ -35,13 +35,13 @@ function checkGameState() {
   return gameIsRunning;
 }
 
-function updateLevelGui() {
-  $("#level-title").html("Level " + currentLevel);
+function updateLevelGui(level) {
+  $("#level-title").html("Level " + level);
 }
 
 function nextSequence() {
   currentLevel++;
-  updateLevelGui();
+  updateLevelGui(currentLevel);
   let randomNumber = Math.floor(Math.random() * 4);
   let color = buttonColours[randomNumber];
   selectButton(randomNumber);
@@ -138,12 +138,44 @@ function buttonHandler(button) {
       console.warn("unknown button id: " + userChosenColor);
       break;
   }
+
+
+  // (checkAnswer(userClickedPattern.length-1)) ? (continueGame()) : (endGame()); 
+  checkAnswer(userClickedPattern.length-1);
+  
   console.dir(button);
   console.info(userClickedPattern);
   console.groupEnd();
 }
 
-function checkAnswer() {}
+function checkAnswer(currentLevel) {
+  if(gamePattern[currentLevel] == userClickedPattern[currentLevel]){
+    // return true;
+    if(userClickedPattern.length == gamePattern.length){
+      console.info("%cSuccess!! ヽ(´▽`)/", "color:green;");
+      continueGame();
+    }
+  }
+  else{
+    console.info("%cFail!! щ（ﾟДﾟщ）", "color:red;");
+    endGame();
+    // return false;
+  }
+}
+
+function continueGame(){
+  userClickedPattern = [];
+  setTimeout(function(){nextSequence();}, 1000);
+}
+
+function endGame(){
+  userClickedPattern = [];
+  gamePattern = [];
+  currentLevel = 0;
+  updateLevelGui(currentLevel);
+  setTimeout(function(){nextSequence();}, 1000);
+
+}
 
 function playSound(name) {
   audio = new Audio("src/sounds/" + name + ".mp3");
@@ -159,4 +191,3 @@ function animateButton(currentColor) {
 
 // $("#someElement").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 
-// selectButton(nextSequence());
