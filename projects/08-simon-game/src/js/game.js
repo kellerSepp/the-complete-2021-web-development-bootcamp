@@ -169,11 +169,17 @@ function continueGame(){
 }
 
 function endGame(){
+  let gameOverAudio = new Audio("src/sounds/wrong.mp3")
+  gameOverAudio.play();
+  $("body").addClass("game-over");
+  setTimeout(function(){$("body").removeClass("game-over");}, 200);
+  $("h1").html("Game Over, Press Any Key or Click to Restart");
+  gameIsRunning = false;
   userClickedPattern = [];
   gamePattern = [];
   currentLevel = 0;
   updateLevelGui(currentLevel);
-  setTimeout(function(){nextSequence();}, 1000);
+  // setTimeout(function(){nextSequence();}, 1000);
 
 }
 
