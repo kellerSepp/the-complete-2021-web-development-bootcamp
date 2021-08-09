@@ -183,25 +183,31 @@ div[class*="cube"] {
 }
 
 #c1 {
-  background-color: #a7d49b;
+  /* background-color: #a7d49b; */
+  background-color: rgba(255, 255, 255, 90%);
 }
 
 #c2 {
-  background-color: #b24c63;
+  /* background-color: #b24c63; */
+  background-color: rgba(255, 255, 255, 90%);
 }
 
 #c3 {
-  background-color: #424b54;
+  /* background-color: #424b54; */
+  background-color: rgba(255, 255, 255, 90%);
 }
 
 #c4 {
-  background-color: #bbacc1;
+  /* background-color: #bbacc1; */
+  background-color: rgba(255, 255, 255, 90%);
 }
 
 #c5 {
-  background-color: #50808e;
+  /* background-color: #50808e; */
+  background-color: rgba(255, 255, 255, 90%);
 }
 
 #c6 {
-  background-color: #eea243;
+  /* background-color: #eea243; */
+  background-color: rgba(255, 255, 255, 90%);
 }
